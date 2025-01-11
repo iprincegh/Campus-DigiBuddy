@@ -140,15 +140,7 @@ const PlaceDetails = ({ place, selected, refProp }) => {
                             Opening Hours: {place.opening_hours}
                         </Typography>
                     )}
-                    {place?.description && (
-                        <Typography
-                            gutterBottom
-                            variant="body2"
-                            color="textSecondary"
-                        >
-                            {place.description}
-                        </Typography>
-                    )}
+                    
                     
                     {place?.read_reviews_link && (
                         <Typography
