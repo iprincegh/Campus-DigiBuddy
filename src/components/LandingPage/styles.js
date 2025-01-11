@@ -16,7 +16,7 @@ export default makeStyles((theme) => ({
         
     },
     landingContent: {
-        maxWidth: '600px',
+        minWidth: '600px',
         backgroundColor: 'rgba(255, 255, 255, 0.8)',
         padding: theme.spacing(4),
         borderRadius: theme.shape.borderRadius,
