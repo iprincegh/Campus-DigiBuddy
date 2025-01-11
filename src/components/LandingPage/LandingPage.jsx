@@ -8,11 +8,14 @@ const LandingPage = () => {
     return (
         <Container maxWidth={false} className={classes.landingContainer}>
             <Box className={classes.landingContent} >
+                <Typography variant="h5" className={classes.subtitle}>
+                Hello!👋 I'm Your
+                </Typography>
                 <Typography variant="h2" className={classes.title}>
-                    Welcome to DigiBuddy
+                    DigiBuddy 
                 </Typography>
                 <Typography variant="h5" className={classes.subtitle}>
-                    Your guide to the best places around you.
+                    How may I help you today? 😊
                 </Typography>
                 <Box className={classes.buttonContainer}>
                     <Button variant="contained" color="primary" className={classes.button} href="/home">

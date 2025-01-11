@@ -5,7 +5,7 @@ export default makeStyles((theme) => ({
     landingContainer: {
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center ',
+        justifyContent: 'center  ',
         alignItems: 'center ',
         height: '100vh',
         width: '100vw',
@@ -13,11 +13,11 @@ export default makeStyles((theme) => ({
         backgroundSize: 'auto 100%',
         backgroundPosition: 'center',
         textAlign: 'center',
-        boxSizing: 'border-box',
+        
     },
     landingContent: {
         maxWidth: '600px',
-        backgroundColor: 'rgba(255, 255, 255, 0.8)', // Optional: Add a semi-transparent background to the content
+        backgroundColor: 'rgba(255, 255, 255, 0.8)',
         padding: theme.spacing(4),
         borderRadius: theme.shape.borderRadius,
     },
@@ -26,14 +26,25 @@ export default makeStyles((theme) => ({
         fontWeight: 'bold',
     },
     subtitle: {
-        marginBottom: theme.spacing(4),
+        marginBottom: theme.spacing(1),
     },
     buttonContainer: {
         display: 'flex',
-        justifyContent: 'space-around',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
         width: '100%',
     },
     button: {
         padding: theme.spacing(1.5, 4),
+        fontWeight: 'bold',
+        fontSize: '1rem',
+        borderRadius: theme.shape.border,
+        cursor: 'pointer',
+        '&:hover': {
+            backgroundColor: theme.palette.primary.light, 
+            transform: 'scale(1.05)', 
+            transition: 'all 0.3s ease',
+        },
     },
+    
 }));
